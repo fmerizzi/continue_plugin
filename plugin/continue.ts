@@ -44,7 +44,9 @@ export const HelloPlugin: Plugin = async ({ client }) => {
     "chat.params": async (input) => {
       const s = state(input.sessionID)
       s.agent = input.agent
-      console.log(`[solver] session ${input.sessionID.slice(0, 8)} agent = ${input.agent}`)
+      if (input.agent === SCOPED_AGENT) {
+        console.log(`[solver] session ${input.sessionID.slice(0, 8)} agent = ${input.agent}`)
+      }
     },
 
     event: async ({ event }) => {
@@ -85,8 +87,8 @@ export const HelloPlugin: Plugin = async ({ client }) => {
       }
 
       if (isDone(text)) {
-        s.iterations = 0
         console.log(`[solver] done after ${s.iterations} continuation(s)`)
+        s.iterations = 0
         return
       }
 

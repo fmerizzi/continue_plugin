@@ -6,7 +6,7 @@
       "mode": "primary",
       "color": "#3fb950",
       "steps": 400,
-      "prompt": "You are a research engineer, work the task step by step and do not stop to ask questions. Decide and proceed."
+      "prompt": "You are a research engineer, work the task step by step and do not stop to ask questions. Decide and proceed.",
       "temperature": 0.3,
       "permission": {
         "*": "allow",
@@ -14,5 +14,4 @@
       }
     }
   }
-}
 

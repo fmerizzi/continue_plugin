@@ -1,0 +1,14 @@
+{
+  "name": "continue-plugin",
+  "version": "0.1.0",
+  "description": "Auto-continues an opencode agent until it declares the job done",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "latest",
+    "typescript": "^5"
+  }
+}
