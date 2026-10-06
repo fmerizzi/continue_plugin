@@ -2,7 +2,7 @@
 
 Auto-continues an [opencode](https://opencode.ai) agent until it declares the job done.
 
-Point a long-running task at a scoped agent, and `continue` keeps nudging it forward — one "continue where you left off" prompt at a time — until the agent ends its reply with the exact line `JOB COMPLETED`.
+Point a long-running task at a scoped agent, and `continue` keeps nudging it forward one "don't give up, continue where you left off" prompt at a time, until the agent ends its reply with the exact line `JOB COMPLETED`. This is particularly useful to have a single agent work at a problem for long periods of time without interruptions. The plugin was build with Qwen 3.8 27B local model in mind. 
 
 ## How it works
 
